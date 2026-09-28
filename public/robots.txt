@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://toledohydrojetting.prosapp.site/sitemap.xml
