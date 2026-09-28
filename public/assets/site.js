@@ -1,4 +1,4 @@
-// Version the stylesheet so new navigation styles replace cached previews.
+// Neighborhood links for toledo are checked against generated routes.
 const menu = document.querySelector('[data-menu-button]');
 // Keep the existing links and branding; reuse the Fix & Flip three-line toggle and submenu.
 if (menu) { menu.setAttribute('aria-label', 'Toggle menu'); menu.innerHTML = '<span></span><span></span><span></span>'; }
@@ -15,7 +15,7 @@ if (menuNav) {
  if (servicesAnchor) { menuNav.insertBefore(area, servicesAnchor); servicesAnchor.remove(); } else { menuNav.insertBefore(area, menuNav.lastElementChild); }
 }
 
-const neighborhoodLinks = [['Potwin','potwin'],['College Hill','college-hill'],['Highland Park','highland-park'],['Westboro','westboro'],['Oakland','oakland'],['Hi-Crest','hi-crest']];
+const neighborhoodLinks = [['Old West End', 'old-west-end'], ['Vistula', 'vistula'], ['Old South End', 'old-south-end'], ['Point Place', 'point-place']];
 if (menuNav) {
  const nbArea = document.createElement('div'); nbArea.className = 'navlinks__dropdown';
  const nbTrigger = document.createElement('button'); nbTrigger.type = 'button'; nbTrigger.className = 'navlinks__dropdown-trigger'; nbTrigger.setAttribute('aria-expanded','false'); nbTrigger.setAttribute('aria-controls','neighborhoods-menu'); nbTrigger.innerHTML = 'Neighborhoods <span aria-hidden="true">⌄</span>';
